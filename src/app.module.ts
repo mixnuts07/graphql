@@ -8,6 +8,8 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
   imports: [
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
+      autoSchemaFile: 'schema.gql', // このプロパティによりコードからスキーマが生成される→コードファースト
+      playground: true,
     }),
   ],
   controllers: [AppController],
