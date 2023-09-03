@@ -91,3 +91,10 @@ type Mutation {
   - SDL(Schema Definition Language)を用いてスキーマを作成。その後 Resolver を実装する。
   - スキーマが最初に明確に定義されるためフロント・バック両方が作業しやすい。
   - スキーマとリゾルバーが別々で定義されるため、両方の整合性を保つことが難しい。
+
+| リクエスト               | REST                | GraphQL        |
+| ------------------------ | ------------------- | -------------- |
+| データオブジェクトの取得 | GET                 | query          |
+| データの挿入             | POST                | mutation       |
+| データの更新/削除        | PUT/PATCH/DELETE    | mutation       |
+| データの監視             | /サブスクリプション | - subscription |
